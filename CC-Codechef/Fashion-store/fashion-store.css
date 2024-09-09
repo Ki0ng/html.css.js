@@ -1,0 +1,103 @@
+/* 1. thiết lập phần đầu web thiết lập mặt định*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+a{
+    color: black;
+    /* đặt độ dày cử chữ */
+    font-weight: 550;
+    /* loại bỏ phàn gạch chân */
+    text-decoration: none;
+}
+
+
+/* 2. Update the code below this comment */
+/* phàn thân web */
+header {
+    /* đặt chiều cao */
+    height: 60px;
+    background-color: #806BDC;
+    /* canh giữa */
+    text-align: center;
+}
+
+.NavBar {
+    /* đặt đệm trên cùng*/
+    padding-top: 18px;
+}
+
+#navbar-title {
+    /* chỉnh màu cho chữ */
+    color: white;
+    /* chỉnh cỡ chữ */
+    font-size: 25px;
+}
+
+/* 3. Update the code below this comment */
+
+.Items {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#item-table {
+    width: 100%;
+    text-align: center;
+}
+
+.Item-img {
+    height: 64px;
+}
+
+.Item-tag {
+    font-size: 14px;
+}
+
+.Item-tag:hover {
+    color: #806BDC;
+}
+
+/* Update the code below this comment */
+div.Shopping-container {
+    background-color: lightgrey;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#shopping-time-img {
+    margin-top: 30px;
+    width: 90vw;
+    height: 60vh;
+}
+
+/* Update the code below this comment */
+.Sales-table {
+    width: 90vw;
+    margin: auto;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+.Sales-table-head {
+    background-color: #806BDC;
+}
+
+
+/* Update the code below this comment */
+.Information {
+    width: 92vw;
+    margin: 20px;
+    font-size: 11px;
+    color: #878787;
+    list-style-position: inside;
+}
+
+.footer {
+    height: 50px;
+    padding-top: 28px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

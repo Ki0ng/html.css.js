@@ -1,0 +1,80 @@
+/* 1. sử dụng .class */
+.title {
+    color:rgb(230, 79, 79);
+}
+
+/* 2. sử dụng .class1.class2 (đồng thời chọn thẻ có cả 2 class*/
+.title.heading {
+    color:#2c87dd;
+}
+
+/* 3. sử dụng .class1 .class2 (selector bên phải là con của selector bên trái) */
+.box .title {
+    color:rgb(192, 157, 110);
+}
+
+/* 4. sử dụng * (chọn tất cả các thẻ) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 5. sử dụng element (chọn tất cả các thẻ h2) */
+h2 {
+    color:yellowgreen;
+}
+p {
+    color:rgb(230, 79, 79);
+}
+
+/* 6. sử dụng element.class (chọn tất cả các thẻ div có class="title")*/
+h1.title {
+    color: red;
+}
+h3.box {
+    color:blanchedalmond;
+}
+
+/* 7. sử dụng element.element (chọn tất cả các thẻ div và h2) */
+.box1 {
+    font-size: initial;
+}
+.box2 {
+    /* gạch chân */
+    text-decoration: underline;
+}
+.box3 {
+    /* gạch bỏ */
+    text-decoration: line-through;
+}
+/* cách 1 */
+.box1, .box2, .box3 {
+    color: red
+}
+/* cách 2 */
+.red-color {
+    color:red;
+}
+
+/* 8. element element (selector bên phải là con của selector bên trái)*/
+.box .title {
+    color: aqua;
+}
+
+/* 9. sử dụng element > element (chọn tất cả các thẻ p là con trực tiếp của thẻ div) */
+.box > .title {
+    color:rgb(192, 157, 110);
+}
+
+/* 10. sử dụng element + element (chọn thẻ p đứng liền kề sau div)*/
+.title + .title {
+    color: blue;
+}
+
+/* 11. sử dụng element ~ element (chọn tất cả các thẻ p đứng sau thẻ div)*/
+.title ~ .title {
+    color: blue;
+}
+
+

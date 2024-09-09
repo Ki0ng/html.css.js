@@ -1,0 +1,52 @@
+body {
+    background-color: #E0E0E2;
+}
+
+h1 {
+    color: #721817;
+}
+
+h2 {
+    color: #721817;
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h2 > span {
+    color: #fa9f42;
+    font-size: 0.75em;
+}
+
+#copyright {
+    font-size: 0.75em;
+    padding-top: 12px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+
+/* Hướng dẫn thực hành: Tạo kiểu cho một trang
+
+Mở tệp styles.css.
+
+Thêm quy tắc CSS cho phần tử body để đặt màu nền thành #E0E0E2.
+
+Thêm quy tắc CSS cho phần tử h1 để đặt màu văn bản thành: #721817.
+
+Thêm quy tắc CSS cho phần tử h2 để đặt màu văn bản thành: #721817.
+
+Thêm quy tắc CSS cho lớp CSS center-text để căn giữa văn bản.
+
+Thêm quy tắc CSS cho phần tử HTML có id logo. Đặt lề trái và lề phải của phần tử thành auto và thay đổi hiển thị của phần tử thành phần tử khối.
+
+Thêm quy tắc CSS cho tất cả các phần tử span là phần tử con của phần tử h2 để đặt màu văn bản thành #FA9F42 và kích thước phông chữ thành 0,75em.
+
+Thêm quy tắc CSS cho phần tử HTML có id copyright. Đặt khoảng đệm trên cùng thành 12 pixel và kích thước phông chữ thành 0,75em.
+ */

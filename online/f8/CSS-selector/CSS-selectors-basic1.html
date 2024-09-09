@@ -1,0 +1,82 @@
+<!-- 
+  nguyên lý sử dụng selector
+  1. làm cách đơn giản ngắn ngọn nhất đạt được mục tiêu
+  2. tránh nó chọn chỗ này xong bị ảnh hưởng chỗ khác
+  3. giới hạn dưới 4 cấp
+-->
+<!-- liên kết giữa HTML và CSS -->
+<link rel="stylesheet" href="./CSS-selectors-basic1.css">
+<!-- 1. sử dụng .class -->
+<h2 class="title">Hello everyone</h2>
+<!-- không sử dụng .class -->
+<h2 class="title2">Hello everyone</h2>
+
+<!-- 2. sử dụng .class1.class2 -->
+<h1 class="title heading">Hello everyone</h1>
+<h1 class="heading title">Hello everyone</h1>
+
+<!-- 3. sử dụng .class1 .class2 -->
+<div class="box">
+  <h1 class="title">Hello everyone</h1>
+</div>
+
+<!-- 4. sử dụng * -->
+
+<!-- 5. sử dụng element -->
+
+<!-- 6.sử dụng element.class -->
+ <h3 class="box">Hello person</h3>
+
+<!-- 7. sử dụng element.element -->
+<h3 class="box">Hello person</h3>
+<h4 class="box1">Hello person</h4>
+<h5 class="box2">Hello person</h5>
+<h6 class="box3">Hello person</h6>
+<h4 class="box1 red-color">Hello person</h4>
+<h5 class="box2 red-color">Hello person</h5>
+<h6 class="box3 red-color">Hello person</h6>
+
+<!-- 8. sử dụng element element -->
+<div class="box">
+  <h2 class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sint iure earum esse neque dolore culpa eaque quas assumenda, numquam id ex commodi alias totam quo recusandae nostrum. Molestias, est.</h2>
+</div>
+
+<!-- 9. sử dụng element > element (chọn tất cả các thẻ p là con trực tiếp của thẻ div
+bên phải là con trực tiếp của bên trái)-->
+<div class="box">
+  <h2 class="title">Hollo.</h2>
+  <div>
+    <h2 class="title">Hollo.</h2>
+  </div>
+</div>
+
+ <!-- 10. sử dụng element + element (chọn thẻ p đứng liền kề sau div
+  chọn tất cả trừ thằng đầu tiên)-->
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hobaballo.</h2>
+<h3></h3>
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hobaballo.</h2>
+
+<!-- 11. sử dụng element ~ element (chọn tất cả các thẻ p đứng sau thẻ div
+ chỉ có cái duy nhất k được chọn)-->
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hollo.</h2>
+<h3></h3>
+<!-- hiện đang oử dòng đầu nên k được chọn -->
+<h2 class="title">Hollo.</h2>
+<h2 class="title">Hobaballo.</h2>
+<!-- nếu đưa vào thẻ thì k được chọn -->
+<h2 class="title">Hollo.</h2>
+<div>
+  <!-- chỉ có dòng đầu không được chọn còn lại chọn hết không sợ bị ngắt chỉ cần có cái đầu tiên thì mấy cái sau có thể hiển thị-->
+  <h2 class="title">Hollo.</h2>
+  <h2 class="title">Hollo.</h2>
+  <h3></h3>
+  <h2 class="title">Hollo.</h2>
+  <h2 class="title">Hobaballo.</h2>
+</div>
+
+<!-- 12. -->

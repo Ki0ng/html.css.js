@@ -1,0 +1,20 @@
+/* cách 1 */
+.post-item .title {
+    color: red;
+    font-size: 28px;
+}
+/* cách 2 */
+.post-item > h2.title{
+    color : red;
+    font-size: 28px;
+}
+/* cách 3 */
+div > h2.title {
+    color: red;
+    font-size: 28;
+}
+/* cách 4 */
+div h2.title {
+    color: red;
+    font-size: 28;
+}

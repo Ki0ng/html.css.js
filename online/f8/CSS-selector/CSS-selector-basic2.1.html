@@ -1,0 +1,70 @@
+<!--
+    1. sử dụng CSS-selector ID
+    kết quả, thẻ có id="primary-heading" thành màu đỏ.
+-->
+<h2 id="primary-heading">Tiêu đề 1</h2>
+<h2 id="secondary-heading">Tiêu đề 2</h2>
+...
+<style>
+    #primary-heading {
+        color: red;
+    }
+</style>
+
+<!-- 
+    2. sử dụng CSS-selector Class 
+    kết quả, tất cả các class paragraph đều có màu xanh lục.    
+-->
+<p class="paragraph">Đoạn văn 1</p>
+<p class="paragraph">Đoạn văn 2</p>
+<p class="other-paragraph">Đoạn văn 3</p>
+<style>
+    .paragraph {
+        color: green;
+    }
+</style>
+
+<!-- 
+    3. lựa chọn qua nhiều class 
+    Kết quả, tất cả các thẻ đồng thời có cả class p1-normal và p2-red đều có màu đỏ.
+-->
+<p class="p1-normal">Đoạn văn 1</p>
+<p class="p1-normal">Đoạn văn 2</p>
+<p class="p1-normal p2-red">Đoạn văn 3</p>
+<p class="p1-normal p2-red">Đoạn văn 4</p>
+<style>
+    .p1-normal {
+        color: green;
+    }
+    /* Lưu ý, các tên class viết liền nhau, không có khoảng trắng */
+    .p1-normal.p2-red {
+        color: red;
+    }
+</style>
+
+<!-- CSS cho các thẻ con 
+Chúng ta có thể tùy ý kết hợp các CSS selectors đã học để lựa chọn ra đúng thẻ chúng ta muốn CSS. 
+Ở ví dụ trên, để lựa chọn thẻ con nằm trong 1 thẻ khác ta sẽ sử dụng selector có cú pháp selector-cha selector-con 
+(lưu ý, giữa 2 selectors có một khoảng trắng - dấu cách). 
+-->
+<p class="children-1">Đoạn văn 1 (không parent)</p>
+<p class="children-2">Đoạn văn 2 (không parent)</p>
+
+<div class="parent">
+    <p>Đoạn văn 1 (parent 1)</p>
+    <p class="children-1">Đoạn văn 1 (con của .parent)</p>
+    <p class="children-2">Đoạn văn 2 (con của .parent)</p>
+</div>
+
+<style>
+    /* Chọn tất cả thẻ "p" là con của thẻ có class "parent" */
+    .parent p {
+        color: green;
+    }
+
+    /* Chọn tất cả thẻ có class "children-1" là con của thẻ có class "parent" */
+    .parent .children-1 {
+        color: red;
+    }
+</style>
+
