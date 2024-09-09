@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="elm.css">
+</head>
+<body>
+    <fieldset>
+            <!-- name -->
+        <h1>Person Information</h1>
+        <label for="name"><b>Your Name:</b></label>
+        <input type="text" name="name" class="name">
+
+        <!-- gender -->
+        <p><b>Gender:</b></p>
+        <div>
+            <input type="radio" name="contact" id="male" class="male">
+            <label for="male">Male</label>
+            <input type="radio" name="contact" id="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- favorite -->
+        <div>
+            <p><b>Your Favorite:</b></p>
+            <input type="checkbox" name="cooking" id="cooking">
+            <label for="cooking">Cooking</label>
+        </div>
+        <div>
+            <input type="checkbox" name="singing" id="singing">
+            <label for="singing">Singing</label>
+        </div>
+        <div>
+            <input type="checkbox" name="dancing" id="dancing">
+            <label for="dancing">Dancing</label>
+        </div>
+        <br>
+
+        <!-- conutry -->
+        <label for="cars"><b>Your Country:</b></label>
+        <select name="cars" id="cars">
+            <option value="volvo">Thailand</option>
+            <option value="saab">Japan</option>
+            <option value="opel">Viet Nam</option>
+            <option value="audi">American</option>
+        </select>
+        <br><br>
+
+        <!-- address -->
+        <p><label for="w3review">Address:</label></p>
+        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        <br>
+        <input class="type" type="submit" value="Send" />
+    </fieldset>
+</body>
+</html>

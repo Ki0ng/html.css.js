@@ -1,0 +1,110 @@
+#wrapper {
+    color: #fff;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#form-login {
+    max-width: 630px;
+    height: 530px;
+    background: linear-gradient(45deg, #072f57, #17e26f);
+    flex-grow: 1;
+    padding: 10px 70px 40px;
+}
+
+.form-heading {
+    border-bottom: 1px solid #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.form-group {
+    border-bottom: 1px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.input-group {
+    flex: 1;
+    margin: 0 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+input {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none; 
+    position: relative;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.line {
+    position: relative;
+    height: 1px; 
+    background-color: white;
+    margin-top: 5px;
+}
+.line::after {
+    display: block;
+    height: 2px;
+    margin-top: 4px;
+}
+
+.form-group-bus {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    flex: 1;
+    margin: 0 3px;
+}
+
+.form-group span {
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.form-input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    flex-grow: 1;
+}
+
+.form-input::placeholder {
+    color: #f5f5f5;
+}
+
+.form-submit{
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #fff;
+    padding: 6px 10px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 175px;
+}
+
+.form-submit:hover {
+    background: #17e26f;
+    border: 1px solid rgb(255, 255, 255);
+}

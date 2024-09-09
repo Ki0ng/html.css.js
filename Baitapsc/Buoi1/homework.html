@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome</title>
+        <meta charset="utf-8">
+        <style >
+            .body {
+                /* hiển thị màu */
+                color: hsl(0, 0%, 100%);
+            }
+            .big {
+                /* Static: Đây được xem là giá trị hiển thị Position trong css một cách mặc định (default), các thành phần sẽ nằm theo thứ tự của văn bản. 
+
+                    Relative: Định vị trí tuyệt đối cho các thành phần, không gây ảnh hưởng tới vị trí ban đầu hay các thành phần khác.
+
+                    Absolute: Giá trị này sẽ giúp định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt. Fixed: Định vị trí tương đối cho thành phần theo cửa sổ trình duyệt.
+
+                    Fixed: Định vị và giúp cho phần tử luôn cố định một chỗ, ví dụ như khi bạn scroll trình duyệt chẳng hạn, phần tử sẽ không thay đổi.
+
+                    Inherit: Xác định thừa hưởng thuộc tính từ thành phần cha (thành phần bao ngoài). */
+                position: relative;
+            }
+            .medium {
+                /* chiều rộng */
+                width: 300px;
+                /* chiều cao */
+                height: 200px;
+                /* màu */
+                color: #063852;
+                /* màu nền */
+                background-color: #063852;
+                position: relative;
+                /* bo góc */
+                border-radius: 20px;
+            }
+            .small-one {
+                width: 100px;
+                height: 100px;
+                color: #E6Df44;
+                background-color: #E6Df44;
+                position: absolute;  
+                display:flex;
+                right: 200px;
+                top: 0px;
+                border-radius: 20px;
+            }
+            .small-two {
+                width: 100px;
+                height: 100px;
+                color: #E6Df44;
+                display:flex;
+                background-color:#E6Df44;
+                position: absolute;
+                left: 200px;
+                bottom: 0px;
+                border-radius: 20px;
+            }
+            .h {
+                color:chocolate;
+                font-size: 16px;
+                box-sizing: border-box;
+                left: 30px;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display:flex;
+                bottom: 0px;
+            }
+            .kl {
+                color: cadetblue;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display:flex;
+                bottom: -90px;
+            }
+             
+        </style>
+    </head>
+    <body>
+        <div class="big">
+            <div class="medium">
+                <p class="kl">Hình khối lớn</p>
+                <div class="small-one"> 
+                    <p class="h">Hình 1</p>
+                </div>
+                <div class="small-two">
+                    <p class="h">Hình 2</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

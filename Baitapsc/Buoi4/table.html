@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. chuyển đổi màu và các thuộc tính */
+        /* table {
+            background: violet;
+        }
+        .vang:hover {
+            background: yellow;
+        }
+        .xanh:hover {
+            background: blue;
+        }
+        .do:hover {
+            background: red;
+        } */
+        
+        /* 2. tạo phần trống bảng */
+        /* table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        } */
+
+        /* 3. sử dụng div */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .row1, .row2 {
+            display: flex;
+            border: 2px solid #000000;
+            width: 40%;
+        }
+
+        #container .header {
+            width: 40%;
+            border-right: 2px solid #3800b9;
+            align-self: center;
+            line-height: 40px;
+        }
+        
+        #container .row1 .content {
+            line-height: 35px;
+        }
+
+        #container .content {
+            border-bottom: 1px solid #000000;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. chuyển đổi màu à thuộc tính -->
+    <!-- <table border="1" style="padding: 15px; width: 30%;border-collapse: collapse; text-align: left; vertical-align: text-top; border-spacing: 5px;" >
+        <tr class="vang">
+            <td>Mengo</td>
+            <td>Rom</td>
+            <td>20</td>
+        </tr>
+        <tr class="xanh">
+            <td>Villong</td>
+            <td>Bung</td>
+            <td>30</td>
+        </tr>
+        <tr class="do">
+            <td>Teng</td>
+            <td>Sangha</td>
+            <td>30</td>
+        </tr>
+    </table> -->
+
+
+    <!-- 2. khoảng trống bảng -->
+    <!-- <table style="width: 30%;">
+        <tr>
+            <th>Name:</th>
+            <td>Mr. Angkor</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>0129 345 678</td>
+        </tr>
+        <tr>
+            <td>0987 654 321</td>
+        </tr>
+    </table> -->
+
+    <!-- 3. sử dụng div -->
+    <div id="container">
+        <div class="row1">
+            <div class="header" style="background: #7700ff;">Name:</div>
+            <div class="content" style="background: #7700ff;">Mr. Angkor</div>
+        </div>  
+        <div class="row2">
+            <div class="header">Telephone:</div>
+            <div class="content">
+                <div class="content">0987 654 321</div>
+                <div class="content" style="line-height: 24px; background: red;">0123 456 789</div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

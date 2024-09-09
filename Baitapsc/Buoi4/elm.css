@@ -1,0 +1,11 @@
+.name {
+    background: rgb(216, 216, 216);
+    border: 3px solid rgb(120, 120, 196);
+}
+
+.type:hover {
+    background: green;
+    width: 8%;
+    height: 10%;
+    border: 1px solid;
+}

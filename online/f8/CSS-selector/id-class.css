@@ -1,9 +1,0 @@
-/* với id sử dụng # */
-#heading {
-    color: red;
-    font-size: 24px;
-}
-/* với class sử dụng . */
-.paragraph {
-    color: green;
-}
